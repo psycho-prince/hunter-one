@@ -4,20 +4,12 @@ services:
     env: docker
     plan: free
     region: oregon
-    propertyOrdering: [type, name, env, plan, region]
     autoDeploy: true
-    healthCheckPath: /healthz
+    # REMOVE any startCommand line here. 
+    # Let the Dockerfile handle it.
     envVars:
       - key: PORT
         value: "5678"
       - key: N8N_LISTEN_ADDRESS
         value: "0.0.0.0"
-      - key: WEBHOOK_URL
-        value: "https://hunter-one.onrender.com/"
-      - key: N8N_BASIC_AUTH_ACTIVE
-        value: "true"
-      - key: N8N_BASIC_AUTH_USER
-        value: "admin"
-      - key: N8N_BASIC_AUTH_PASSWORD
-        value: "StrongPassword123!" # CHANGE THIS LATER
         
