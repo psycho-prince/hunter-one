@@ -4,6 +4,7 @@ services:
     env: docker
     plan: free
     autoDeploy: true
+    startCommand: "n8n"
     envVars:
       - key: PORT
         value: "5678"
