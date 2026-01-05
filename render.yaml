@@ -3,6 +3,7 @@ services:
     name: n8n
     env: docker
     plan: free
+    region: singapore
     autoDeploy: true
     envVars:
       - key: N8N_BASIC_AUTH_ACTIVE
@@ -10,4 +11,4 @@ services:
       - key: N8N_BASIC_AUTH_USER
         value: "admin"
       - key: N8N_BASIC_AUTH_PASSWORD
-        value: "rhyugenprince7"
+        value: "StrongPasswordHere"
